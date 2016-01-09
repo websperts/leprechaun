@@ -1,6 +1,6 @@
 {
   "name": "leprechaun",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple, lightweight, and colorful logging utility",
   "homepage": "https://github.com/websperts/leprechaun",
   "author": "websperts <hello@websperts.com>",

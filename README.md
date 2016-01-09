@@ -34,6 +34,8 @@ log.error(a, b, c);
 
 ## Changelog
 
+* 0.0.2
+  * Fix logo within README
 * 0.0.1
 	* Initial version
 
