@@ -1,7 +1,8 @@
 {
   "name": "leprechaun",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A simple, lightweight, and colorful logging utility",
+  "type": "module",
   "homepage": "https://github.com/websperts/leprechaun",
   "author": "websperts <hello@websperts.com>",
   "repository": {
@@ -15,9 +16,33 @@
   "bugs": {
     "url": "https://github.com/websperts/leprechaun/issues"
   },
-  "main": "leprechaun.js",
+  "main": "dist/leprechaun.js",
+  "types": "dist/leprechaun.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/leprechaun.js",
+      "types": "./dist/leprechaun.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
   "dependencies": {
-    "log-symbols": "^1.0.2"
+    "log-symbols": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.1.0",
+    "typescript": "^5.7.2"
   }
 }
